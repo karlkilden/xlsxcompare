@@ -4,7 +4,7 @@
 .settings/
 
 # Intellij
-.idea/
+*.idea
 *.iml
 *.iws
 git
@@ -13,4 +13,4 @@ git
 
 # Maven
 log/
-target/
+target/.idea
