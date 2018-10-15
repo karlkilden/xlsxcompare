@@ -4,7 +4,56 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/se/stendahls/pod/idm/IdmDealerEndPointReader.java" line="15" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c12b89a-5020-4073-8a0f-a463725e7bc0" name="Default" comment="" />
+    <list default="true" id="0c12b89a-5020-4073-8a0f-a463725e7bc0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/ConfigReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/Dealer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/DealerLocatorFields$Idm.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/DealerLocatorFields$MdHub.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/DealerLocatorFields$Neutral.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/DealerLocatorFields.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/DealerMapping.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/DealerProblemRollUp.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/ExcelWriter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/FinalStep.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/KeyMappingReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/Pod.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/PodKeyMapping.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/PodResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/PodRunner.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/PodStartup.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/ProblemRow.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/StartupConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/StartupStep.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/StartupStepResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/idm/Attribute.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/idm/IdmDealerEndPointReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/idm/IdmDealerFileReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/idm/IdmDealerProcessor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/idm/IdmDealerReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/idm/IdmRaw.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/idm/IdmRawEntry.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/idm/IdmReadResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/idm/IdmStep.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/idm/IdmStepResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/mdhub/ApachePOIExcelRead.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/mdhub/MdHubDealerProcessor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/mdhub/MdHubDealerReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/mdhub/MdHubStep.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/stendahls/pod/mdhub/MdHubStepResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/pod/ConfigReaderTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/pod/DealerTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/pod/GetterSetterVerifier.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/pod/IdmDealerFetcherTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/pod/PodRunnerTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/pod/PodTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/pod/ProblemRowTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/pod/StartupStepTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/pod/idm/IdmStepTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/pod/mdhub/MdHubDealerReaderTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/stendahls/xlsxcompare/PodRunnerTest.class" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,11 +115,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FinalStep.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FinalStep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/stendahls/pod/FinalStep.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1013">
               <caret line="76" column="37" lean-forward="false" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -319,7 +378,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/se/stendahls/pod/IdmDealerFetcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/stendahls/pod/PodResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/stendahls/pod/PodStartup.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/stendahls/pod/IdmRawToDealerWriter.java" />
@@ -370,6 +428,7 @@
         <option value="$PROJECT_DIR$/src/main/java/se/stendahls/pod/mdhub/MdHubDealerProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/stendahls/pod/DealerLocatorFields.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/stendahls/pod/FinalStep.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -711,8 +770,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538225177675</updated>
-      <workItem from="1538225181082" duration="64466000" />
+      <workItem from="1538225181082" duration="65931000" />
     </task>
+    <task id="LOCAL-00001" summary="IGNORE">
+      <created>1539588947454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539588947454</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -748,7 +815,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64466000" />
+    <option name="totallyTimeSpent" value="65931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -768,11 +835,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3368146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24838477" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24838477" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24982053" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -789,8 +856,38 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="IGNORE" />
+    <option name="LAST_COMMIT_MESSAGE" value="IGNORE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -856,29 +953,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.0.0/poi-4.0.0.jar!/org/apache/poi/ss/usermodel/Workbook.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <marker date="1539265539328" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1539265539328" expanded="false" signature="151:463" ph="..." />
-            <marker date="1539265539328" expanded="true" signature="1506:1524" ph="/**...*/" />
-            <marker date="1539265539328" expanded="true" signature="1529:1568" ph="@{...}" />
-            <marker date="1539265539328" expanded="true" signature="1638:1656" ph="/**...*/" />
-            <marker date="1539265539328" expanded="true" signature="1661:1700" ph="@{...}" />
-            <marker date="1539265539328" expanded="true" signature="2117:2135" ph="/**...*/" />
-            <marker date="1539265539328" expanded="true" signature="2140:2197" ph="@{...}" />
-            <marker date="1539265539328" expanded="true" signature="2257:2275" ph="/**...*/" />
-            <marker date="1539265539328" expanded="true" signature="2280:2336" ph="@{...}" />
-            <marker date="1539265539328" expanded="true" signature="2377:2395" ph="/**...*/" />
-            <marker date="1539265539328" expanded="true" signature="2400:2456" ph="@{...}" />
-            <marker date="1539265539328" expanded="true" signature="2493:2511" ph="/**...*/" />
-            <marker date="1539265539328" expanded="true" signature="2516:2572" ph="@{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -1510,6 +1584,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1013">
           <caret line="76" column="37" lean-forward="false" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding />
         </state>
       </provider>
