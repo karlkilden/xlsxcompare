@@ -1,5 +1,7 @@
 package se.stendahls.pod;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,6 +33,16 @@ public class Dealer {
     }
 
     public void addFieldValue(String name, String value) {
+
+        if (ProductLine.codedProductLines.containsKey(value))    {
+
+            value = ProductLine.codedProductLines.get(value);
+        }
+
+        String existingValue = fields.get(name);
+        if (StringUtils.isNotEmpty(existingValue) && !StringUtils.equals(existingValue,value) && StringUtils.isNotEmpty(value)) {
+         value = existingValue + ", " + value;
+        }
         fields.put(name,value);
     }
 

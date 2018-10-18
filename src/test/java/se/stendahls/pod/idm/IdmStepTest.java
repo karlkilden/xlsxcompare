@@ -25,7 +25,7 @@ public class IdmStepTest {
     @Test
     public void read() {
         step.read(startupResult);
-        Mockito.verify(reader).read();
+        Mockito.verify(reader).read(startupResult);
     }
 
     @Test
@@ -39,7 +39,7 @@ public class IdmStepTest {
 
     @Test
     public void read_sets_result() {
-        Mockito.when(reader.read()).thenReturn(new IdmRaw());
+        Mockito.when(reader.read(startupResult)).thenReturn(new IdmRaw());
         StartupStepResult startupResult = new StartupStepResult();
         step.read(startupResult);
         IdmStepResult result = step.getResult();

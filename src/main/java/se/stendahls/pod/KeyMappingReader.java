@@ -1,7 +1,14 @@
 package se.stendahls.pod;
 
+import org.apache.poi.ss.usermodel.Workbook;
+
 public class KeyMappingReader {
-    public PodKeyMapping readKeyMapping() {
-        return new PodKeyMapping();
+
+    public Workbook read(StartupConfig startupConfig) {
+
+
+        ExcelWorkbookReader reader = new ExcelWorkbookReader();
+        return reader.read(startupConfig.getKeyMappingExcel());
+
     }
 }

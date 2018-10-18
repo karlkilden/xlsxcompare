@@ -29,4 +29,8 @@ public class DealerMapping {
     public Dealer byName(String name) {
         return dealersByName.get(name);
     }
+
+    public Dealer getByKey(String id) {
+        return dealersByKey.get(id);
+    }
 }

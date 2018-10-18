@@ -11,13 +11,15 @@ public class StartupStepTest {
 
     private ConfigReader configReader;
     private KeyMappingReader keyMappingReader;
+    KeyMappingProcessor processor;
     StartupStep step;
 
     @Before
     public void setUp() throws Exception {
         configReader = Mockito.mock(ConfigReader.class);
         keyMappingReader = Mockito.mock(KeyMappingReader.class);
-        step = new StartupStep(configReader, keyMappingReader);
+        processor = Mockito.mock(KeyMappingProcessor.class);
+        step = new StartupStep(configReader, keyMappingReader, processor);
 
     }
 
@@ -37,12 +39,12 @@ public class StartupStepTest {
     @Test
     public void readMapping_uses_reader() {
         step.readKeyMapping();
-        Mockito.verify(keyMappingReader).readKeyMapping();
+        Mockito.verify(keyMappingReader).read(new StartupConfig());
     }
 
     @Test
     public void readMapping_updates_result() {
-        Mockito.when(keyMappingReader.readKeyMapping()).thenReturn(new PodKeyMapping());
+        Mockito.when(keyMappingReader.read(new StartupConfig())).thenReturn(null);
         StartupStepResult result = step.readKeyMapping().getResult();
         Assertions.assertThat(result.getKeyMapping()).isNotNull();
     }

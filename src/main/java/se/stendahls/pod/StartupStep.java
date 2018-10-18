@@ -6,10 +6,13 @@ public class StartupStep {
 
     private ConfigReader configReader;
     private KeyMappingReader keyMappingReader;
+    private KeyMappingProcessor processor;
 
-    public StartupStep(ConfigReader configReader, KeyMappingReader keyMappingReader) {
+
+    public StartupStep(ConfigReader configReader, KeyMappingReader keyMappingReader, KeyMappingProcessor processor) {
         this.configReader = configReader;
         this.keyMappingReader = keyMappingReader;
+        this.processor = processor;
 
         result = new StartupStepResult();
     }
@@ -20,7 +23,11 @@ public class StartupStep {
     }
 
     public StartupStep readKeyMapping() {
-        result.setKeyMapping(keyMappingReader.readKeyMapping());
+        result.setKeyMappingWorkbook(keyMappingReader.read(result.getConfig()));
+        return this;
+    }
+    public StartupStep process() {
+        result.setKeyMapping(processor.process(result.getKeyMappingWorkBook()));
         return this;
     }
 

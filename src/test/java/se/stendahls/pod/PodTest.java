@@ -42,7 +42,7 @@ public class PodTest {
     @Test
     public void runs() {
 
-        StartupStep startupStep = new StartupStep(new ConfigReader(), new KeyMappingReader());
+        StartupStep startupStep = new StartupStep(new ConfigReader(), new KeyMappingReader(), new KeyMappingProcessor());
         IdmStep idmStep = new IdmStep(new IdmDealerFileReader(), new IdmDealerProcessor());
         MdHubStep mdHubStep = new MdHubStep(new MdHubDealerReader(), new MdHubDealerProcessor());
         FinalStep finalStep = new FinalStep();

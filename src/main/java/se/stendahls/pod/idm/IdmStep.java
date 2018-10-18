@@ -13,7 +13,7 @@ public class IdmStep {
     }
 
     public IdmStep read(StartupStepResult startupResult) {
-        idmStepResult.setIdmRaw(reader.read());
+        idmStepResult.setIdmRaw(reader.read(startupResult));
         return this;
     }
 

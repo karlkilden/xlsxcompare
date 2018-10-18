@@ -14,24 +14,19 @@ import java.util.Locale;
 public class ConfigReader {
 
 
-    JsonObject json = JsonValue.readHjson("{\n" +
-            "  first: test,test,test\n" +
-            "  second: 2\n" +
-            "}").asObject();
-
-    String f = json.get("first").asString();
-
     public StartupConfig readConfig() {
 
-
-
         try {
-            String hjson = new String(Files.readAllBytes(Paths.get("dictionary.hjson")), Charset.forName("utf-8"));
+            String hjson = new String(Files.readAllBytes(Paths.get("config.hjson")), Charset.forName("utf-8"));
 
             JsonObject json = JsonValue.readHjson(hjson).asObject();
 
-            Object f = json.get("COUNTRY").asArray();
-            f.toString();
+            StartupConfig config = new StartupConfig();
+            config.setIdmEndPoint(json.get("idmEndPoint").asString());
+            config.setIdmFile(json.get("IdmFile").asString());
+            config.setMdHubExcel(json.get("mdHubExcel").asString());
+            config.setKeyMappingExcel(json.get("keyMappingExcel").asString());
+            return config;
 
         } catch (IOException e) {
             e.printStackTrace();

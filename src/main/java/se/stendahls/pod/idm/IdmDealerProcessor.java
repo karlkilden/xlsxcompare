@@ -20,24 +20,34 @@ public class IdmDealerProcessor {
 
 
     private DealerMapping createDealers(IdmRawEntry entry) {
-        if(StringUtils.isNotEmpty(entry.getName())) {
+        if (StringUtils.isNotEmpty(entry.getName())) {
             Dealer dealer = new Dealer();
             String region = null;
             String[] splitName = entry.getName().split(",");
-            if (splitName.length >5) {
-                String n = splitName[splitName.length-6];
+            if (splitName.length > 5) {
+                String n = splitName[splitName.length - 6];
                 region = n.replace("OU=", "");
                 dealer.addFieldValue(DealerLocatorFields.Idm.REGION, region);
             }
-            for(Attribute a: entry.getAttributes()) {
-            if (DealerLocatorFields.Idm.ID.equals(a.getName())) {
-                dealer.setKey(a.getValue());
-            }
-
-                if (a.getName().equals(DealerLocatorFields.Idm.DISPLAY_NAME)){
-                    dm.addByName(a.getValue(), dealer);
+            for (Attribute a : entry.getAttributes()) {
+                if (DealerLocatorFields.Idm.ID.equals(a.getName())) {
+                    dealer.setKey(a.getValue()[0]);
                 }
-                dealer.addFieldValue(a.getName(), a.getValue());
+
+                if (a.getName().equals(DealerLocatorFields.Idm.DISPLAY_NAME)) {
+                    dm.addByName(a.getValue()[0], dealer);
+                }
+                if (a.getValue() != null) {
+
+
+                    for (String v : a.getValue()) {
+
+                     
+                     
+                            dealer.addFieldValue(a.getName(), v);
+
+                    }
+                }
 
 
                 dm.add(dealer);
@@ -47,7 +57,7 @@ public class IdmDealerProcessor {
         if (entry.getEntries() == null) {
             return dm;
         }
-        for(IdmRawEntry e: entry.getEntries()) {
+        for (IdmRawEntry e : entry.getEntries()) {
             createDealers(e);
         }
         return dm;

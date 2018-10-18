@@ -1,9 +1,14 @@
 package se.stendahls.pod.idm;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 public class Attribute {
     private String name;
     private String type;
-    private String value;
+    @JacksonXmlElementWrapper(useWrapping=false)
+    @JacksonXmlProperty(localName = "value")
+    private String[] value;
 
 
     public String getName() {
@@ -22,11 +27,11 @@ public class Attribute {
         this.type = type;
     }
 
-    public String getValue() {
+    public String[] getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(String[] value) {
         this.value = value;
     }
 }

@@ -4,17 +4,18 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import se.stendahls.pod.StartupStepResult;
 
 import java.io.*;
 
 public class IdmDealerEndPointReader implements IdmDealerReader {
 
     @Override
-    public IdmRaw read() {
+    public IdmRaw read(StartupStepResult result) {
         OkHttpClient client = new OkHttpClient();
 
         Request request = new Request.Builder()
-                .url("https://net.volvoce.com/ilfdealerlocator/xml/enterprise.xml")
+                .url(result.getConfig().getIdmEndPoint())
                          .build();
 
         try {

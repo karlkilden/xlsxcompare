@@ -24,6 +24,7 @@ public class Pod {
 
         startupStep.readConfig();
         startupStep.readKeyMapping();
+        startupStep.process();
         StartupStepResult startupResult = startupStep.getResult();
 
         idmStep.read(startupResult);
