@@ -3,8 +3,6 @@
   mdHubExcel:files/MDHUB - Commercial Organization.XLS
   IdmFile:files/enterprise.xml
   idmEndPoint:https://net.volvoce.com/ilfdealerlocator/xml/enterprise.xml
-
-  skippedRegions: 1
-  compareUsingName: 2
-  skipWhenBothShowInDlNo:2
+  useIgnore:false
+  skipWhenBothShowInDlNo:true
 }

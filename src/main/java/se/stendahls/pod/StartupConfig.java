@@ -6,6 +6,8 @@ public class StartupConfig {
     private String mdHubExcel;
     private String IdmFile;
     private String idmEndPoint;
+    private boolean useIgnore;
+    private boolean skipWhenBothShowInDlNo;
 
 
     public String getKeyMappingExcel() {
@@ -40,4 +42,19 @@ public class StartupConfig {
         this.idmEndPoint = idmEndPoint;
     }
 
+    public boolean isUseIgnore() {
+        return useIgnore;
+    }
+
+    public void setUseIgnore(boolean useIgnore) {
+        this.useIgnore = useIgnore;
+    }
+
+    public boolean isSkipWhenBothShowInDlNo() {
+        return skipWhenBothShowInDlNo;
+    }
+
+    public void setSkipWhenBothShowInDlNo(boolean skipWhenBothShowInDlNo) {
+        this.skipWhenBothShowInDlNo = skipWhenBothShowInDlNo;
+    }
 }

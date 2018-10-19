@@ -47,7 +47,7 @@ public class Dealer {
     }
 
     public String getField(String key) {
-        return fields.get(key);
+        return fields.getOrDefault(key,"");
     }
 
     public boolean isMdHub() {

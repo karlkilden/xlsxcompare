@@ -26,6 +26,9 @@ public class ConfigReader {
             config.setIdmFile(json.get("IdmFile").asString());
             config.setMdHubExcel(json.get("mdHubExcel").asString());
             config.setKeyMappingExcel(json.get("keyMappingExcel").asString());
+            config.setUseIgnore(json.get("useIgnore").asBoolean());
+            config.setSkipWhenBothShowInDlNo(json.get("skipWhenBothShowInDlNo").asBoolean());
+
             return config;
 
         } catch (IOException e) {

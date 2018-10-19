@@ -60,8 +60,9 @@ public class MdHubDealerProcessor {
 
 
             if (sheet.getSheetName().equals("Address")) {
-                if (row.getCell(2) != null && !StringUtils.equals("Main - Physical", row.getCell(2).getStringCellValue())) {
+                if (row.getRowNum() != 1 && row.getCell(2) != null && !StringUtils.equals("Main - Physical", row.getCell(2).getStringCellValue())) {
                     isWalkToAddress = false;
+                    continue;
                 }
             }
             for (Cell cell : row) {

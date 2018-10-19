@@ -85,7 +85,7 @@ public class FinalStep {
                     mdHubCurrentValue = sortProductLineString(mdHubCurrentValue);
                 }
 
-                    if (!StringUtils.equals(StringUtils.stripToEmpty(idmCurrentValue), StringUtils.stripToEmpty(mdHubCurrentValue))) {
+                    if (!StringUtils.equals(StringUtils.stripToEmpty(idmCurrentValue), StringUtils.stripToEmpty(mdHubCurrentValue)) && shouldShow(idmDealer, mdHubDealer,startupResult)) {
 
                     rowNum = writeRow(workbook, sheet, rowNum, dlCount, idmDealer, mdHubDealer, s, idmCurrentValue, mdHubCurrentValue);
                 }
@@ -114,6 +114,15 @@ public class FinalStep {
         }
 
 
+    }
+
+    private boolean shouldShow(Dealer idmDealer, Dealer mdHubDealer, StartupStepResult startupResult) {
+        if(startupResult.getConfig().isSkipWhenBothShowInDlNo()) {
+            if(mdHubDealer.getField(DealerLocatorFields.MdHub.SHOW_IN_DL).equals("N") && idmDealer.getField(DealerLocatorFields.Idm.SHOW_IN_DL).equals("False")) {
+                return false;
+            }
+        }
+        return true;
     }
 
     private String sortProductLineString(String currentVal) {
@@ -156,7 +165,7 @@ public class FinalStep {
         createCell(row, 6, idmDealer.getField(DealerLocatorFields.Idm.COUNTRY), dlCount, workbook);
         createCell(row, 7, getMdHubCountry(mdHubDealer), dlCount, workbook);
         createCell(row, 8, idmDealer.getField(DealerLocatorFields.Idm.ID), dlCount, workbook);
-        createCell(row, 9, mdHubDealer.getField(DealerLocatorFields.MdHub.ID), dlCount, workbook);
+        createCell(row, 9   , mdHubDealer.getField(DealerLocatorFields.MdHub.ID), dlCount, workbook);
         createCell(row, 10, idmDealer.getField(DealerLocatorFields.Idm.SHOW_IN_DL), dlCount, workbook);
         createCell(row, 11, mdHubDealer.getField(DealerLocatorFields.MdHub.SHOW_IN_DL), dlCount, workbook);
 

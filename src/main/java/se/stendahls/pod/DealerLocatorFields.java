@@ -93,6 +93,8 @@ public class DealerLocatorFields {
         public static final String POSTAL_CODE = "Address_Postal Code";
         public static final String CITY = "Address_City";
         public static final String STATE = "Address_State";
+        public static final String PROVINCE = "Address_Province";
+
         public static final String COUNTRY1 = "Distribution_Dealer L1 Country Code";
         public static final String COUNTRY2 = "Distribution_Dealer L2 Country Code";
         public static final String COUNTRY3 = "Distribution_Dealer L3 Country Code";
@@ -107,6 +109,7 @@ public class DealerLocatorFields {
 
         public static final Map<String, String> FIELDS = new HashMap<>();
 
+
         static {
             FIELDS.put(Neutral.ID, MdHub.ID);
             FIELDS.put(Neutral.DISPLAY_NAME, MdHub.DISPLAY_NAME);
@@ -119,6 +122,8 @@ public class DealerLocatorFields {
             FIELDS.put(Neutral.POSTAL_CODE, MdHub.POSTAL_CODE);
             FIELDS.put(Neutral.CITY, MdHub.CITY);
             FIELDS.put(Neutral.STATE, MdHub.STATE);
+            FIELDS.put(Neutral.PROVINCE, MdHub.PROVINCE);
+
             FIELDS.put(Neutral.LATITUDE, MdHub.LATITUDE);
             FIELDS.put(Neutral.LONGITUDE, MdHub.LONGITUDE);
             FIELDS.put(Neutral.SHOW_IN_DL, MdHub.SHOW_IN_DL);
